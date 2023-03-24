@@ -16,7 +16,7 @@ body{
     align-items: center;
     width: 500px;
     border-radius: 30px;
-    padding:20px;
+    margin: 10px;
 }
 button{
     margin-bottom: 20px;
@@ -41,6 +41,7 @@ p{
     padding: 20px;
     border-radius: 20px;
     font-size: 20px;
+    margin: 25px;
 }
 h2{
     font-size: 30px;
