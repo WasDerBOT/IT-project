@@ -15,9 +15,16 @@ body {
 canvas {
     background: rgba(27, 255, 95, 0.61);
     border-radius: 20px;
+    margin-right: 30px;
+}
+#canvAndButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
     
 }
-
 button{
     margin-bottom: 20px;
     background-color: rgba(201, 201, 201, 0.493);
@@ -27,6 +34,10 @@ button{
     font-size: 20px;
     border-radius: 20px;
     transition-duration: 300ms;
+}
+#controlMenu{
+    display: flex;
+    flex-direction: column;
 }
 button:hover{
     background-color: rgba(241, 241, 241, 0.493);

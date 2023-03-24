@@ -1,7 +1,7 @@
 let canvas = document.getElementById("canvas")
 let context = canvas.getContext("2d")
 
-
+IsPaused = false;
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -79,10 +79,19 @@ window.addEventListener("keydown", e => {
 IsgameOver = false
 
 function gameOver() {
-    scoreText.textContent = "You lose with score : " + String(score)
     IsgameOver = true
+    alert("You lose with score : " + String(score) )
 }
-
+function Init(){
+    score = 0
+    snake = [];
+    snake.push(new block((new vector(5, 5)), "snake", new vector(1, 0)));
+    IsPaused = false;
+    IsgameOver = false
+    apple = null
+    fed = false
+    applyFood()
+}
 function checkCollision() {
     if (snake.length <= 2) {
         return
@@ -124,10 +133,22 @@ function applyFood() {
         }
     }
 }
-
+function play(){
+    IsPaused = false;
+}
+function pause(){
+    IsPaused = true;
+}
+function feed(){
+    fed = true;
+}
+// Function which called fixed times a sec
 function update() {
     if (IsgameOver) {
-        return
+        return         //Checking for ending
+    }
+    if (IsPaused){
+        return          // Checking for pause
     }
     checkCollision()
     context.clearRect(0, 0, 500, 500)

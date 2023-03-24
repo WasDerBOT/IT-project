@@ -8,14 +8,24 @@
 </head>
 
 <body>
-  <div>
-    <p>Snake Game</p>
-    <p class="text">Score : </p>
-    <p id="score">0</p>
+  
+  <p>Snake Game</p>
+  <p class="text">Score : </p>
+  <p id="score">0</p>
+  <div id = "canvAndButtons">
     <canvas id="canvas" height="500" width="500"></canvas>
-    
-    <script src="snake.js"></script>
+    <div id = "controlMenu">
+      <button onclick = "play()">Play</button>
+      <button onclick = "pause()">Pause</button>
+      <button onclick = "feed()">Feed Snake</button>
+      <button onclick="Init()">Restart</button>
+    </div>
   </div>
+  
+  
+  <script src="snake.js"></script>
+  
+
   <form action="index.html">
     <button>Back to menu</button>
   </form>
