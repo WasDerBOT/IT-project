@@ -74,6 +74,35 @@ window.addEventListener("keydown", e => {
             }
             break
 
+        case "ц":
+            if (snake[0].direction.y !== 1) {
+                snake[0].direction.y = -1
+                snake[0].direction.x = 0
+                console.log("w")
+            }
+            break
+        case "ф":
+            if (snake[0].direction.x !== 1) {
+                snake[0].direction.x = -1
+                snake[0].direction.y = 0
+                console.log("a")
+            }
+            break
+        case "ы":
+            if (snake[0].direction.y !== -1) {
+                snake[0].direction.y = 1
+                snake[0].direction.x = 0
+                console.log("s")
+            }
+            break
+        case "в":
+            if (snake[0].direction.x !== -1) {
+                snake[0].direction.x = 1
+                snake[0].direction.y = 0
+                console.log("d")
+            }
+            break
+
     }
 })
 IsgameOver = false
