@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(320deg, rgb(15, 0, 226),rgba(33, 255, 244, 0.733));
+    align-items: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+canvas {
+    background: rgba(27, 255, 95, 0.61);
+    border-radius: 20px;
+    margin-right: 30px;
+}
+#canvAndButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+button{
+    margin-bottom: 20px;
+    background-color: rgba(201, 201, 201, 0.493);
+    border: 0px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    transition-duration: 300ms;
+    padding: 15px;
+}
+#controlMenu{
+    display: flex;
+    flex-direction: column;
+}
+button:hover{
+    background-color: rgba(241, 241, 241, 0.493);
+    transform: scale(1.05);
+}
+
+button:active{
+    transition-duration: 150ms;
+    transform: scale(0.95);
+}
+p {
+    size: 30px;
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+}
